@@ -1,53 +1,38 @@
 @charset "utf-8";
-/* 초기화 */
-body, h1, h2, h3, p, ul, figure { margin: 0; padding: 0; }
-li { list-style: none; }
-a { text-decoration: none; }
-address { font-style: normal; }
-hr { display: none; }
-.hidden { position: absolute; 
-          clip: rect(0 0 0 0);
-          overflow: hidden;
-          width: 1px; height: 1px; 
-          margin: -1px;         
-        }
-@font-face {
-    font-family: 'SokchoBadaDotum';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaDotum.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'SUIT-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-}
-/* 전체영역 , 웹폰트 */
-body { width: 720px; margin: 0 auto; 
-       background: #b8dbf8; 
-       font-family: 'SUIT-Regular';
-    }
-/* 헤더 */
-#header { position: relative; height: 275px; background: url(../images/bg.png) no-repeat;  }
-#header hgroup { position: absolute; right: 30px; bottom: 25px; color: #fff; }
-#header hgroup h1 { font-family: 'SokchoBadaDotum'; font-size: 40px; 
-                    text-shadow: 1px 2px 1px #000; }
-#header hgroup p { margin-top: 25px; font-size: 20px; 
-                   text-shadow: 0 2px 1px #000; }
-/* GNB */
-#gnb ul { display: flex; }
-#gnb ul li { width: 25%; }
-#gnb ul li a { display: block; width: 100%;
-               background: #036; color: #fff; 
-               text-align: center; line-height: 60px; }
-#gnb ul li a:hover { background: #fff; color: #000; font-weight: bold; }
+    font-family: 'SokchoBadaDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;}
+
+body, h1, h2, h3, h4, p, ul, figure {margin: 0; padding:0;}
+li {list-style: none;}
+a {text-decoration:none; color:white;}
+hr {display:none;}
+address {font-style:normal;}
+.hidden {position: absolute; clip: rect(0 0 0 0); overflow: hidden; width: 1px; height: 1px; margin: -1px;}
+header {width: 100%; height: 600px; background: url(../images/bg.png) no-repeat center center / cover; font-family:'SokchoBadaDotum'; z-index: -1; text-align:center; }
+
+hgroup p {text-shadow: black 1px 2px;}
+body {margin: 0 auto; font-family: 'SUIT-Regular'; }
+
+#header hgroup {line-height:50px; color: white; text-shadow: black 2px 3px; padding-top:200px;}
+#gnb {width:1000px; margin: -30px auto;}
+#gnb ul {display: flex; }
+#gnb ul li {width: 25%;}
+#gnb ul li a { display: block; width: 100%; height: 60px; background: navy; color: white; text-align: center; line-height:60px;}
+#gnb ul li a:hover {background: white; color: navy;}
 /* 본문 */
-main { padding: 25px 12px 0; background: #fff; }
-#content article h3 { margin: 25px 0 15px; }
-#content article figure { padding: 0 0 13px 40px; }
+main {width: 1000px; margin: 50px auto; background: white; padding: 50px 12px 0;}
+#content h4 {margin: 25px 0;}
+#content figure {padding: 0 0 13px 40px;}
 /* footer */
-#footer { /* height: 100px; */ padding: 20px 0;
-          text-align: center; font-size: 14px;
-          background: #030; color: #fff; }
-#footer p { margin-bottom: 15px; }
+#footer {padding: 20px; background: green; text-align:center; color: white;}
+#footer p {line-height:50px;}
+#footer address {}
+#footer small {}
+
